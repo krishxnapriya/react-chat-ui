@@ -2,13 +2,12 @@
 import './styles/CometChatBuilderApp.css';
 import { AppContextProvider } from './context/AppContext';
 import { CometChatHome } from './components/CometChatHome/CometChatHome';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useBuilderSettingContext } from './context/BuilderSettingsContext';
 import { fontSizes } from './styleConfig';
 import { CometChat } from '@cometchat/chat-sdk-javascript';
 import useSystemColorScheme from './customHooks';
 import { generateExtendedColors } from './utils/utils';
-import cometChatLogo from './assets/cometchat_logo.svg';
 import { CometChatUIKit } from '@cometchat/chat-uikit-react';
 import '@cometchat/chat-uikit-react/dist/styles/css-variables.css';
 interface CometChatHomeProps {
